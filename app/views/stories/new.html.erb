@@ -1,0 +1,7 @@
+<h1>Add a new story<h1>
+
+<form action="<%= stories_url %>" method="POST">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" id="authenticity_token">
+
+	<p><input type="submit" value="Add Story"></p>
+</form>
