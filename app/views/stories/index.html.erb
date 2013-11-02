@@ -1,7 +1,7 @@
 <h1>Stories</h1>
 <% @stories.each do |story| %>
-<div class='story'>
-	<%= story.title %><br>
+<div class='container storyContainer'>
+	<h3><%= story.title %></h3>
 	<%= simple_format(story.body)  %>
 </div>
 <br>
