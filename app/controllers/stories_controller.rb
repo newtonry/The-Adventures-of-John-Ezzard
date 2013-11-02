@@ -10,12 +10,13 @@ class StoriesController < ApplicationController
     if @story.save
       redirect_to stories_url
     else
-      flash[:errors] = @story.errors
+      flash[:errors] = @story.errors.full_messages
       render :new
     end
   end
   
   def new
+    @story = Story.new
     render :new
   end
 
