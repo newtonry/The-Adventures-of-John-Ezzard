@@ -51,14 +51,14 @@ html {
 
 body {
   margin: 0;
-	
+/*	background: url("phoenix-navbar.png");*/
 /*	added for background image*/
-/*	background: url('/assets/phoenix-bg.jpg') no-repeat center center fixed; 
+	background: url('/assets/phoenix-lightened.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-*/	
+	
 }
 
 a:focus {
@@ -4386,6 +4386,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
+/*	background: url("phoenix-navbar.png");
+*/	
   background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
@@ -5341,11 +5343,16 @@ a.list-group-item:focus {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #ffffff;
+  background-color: rgba(256, 256, 256, 0.3);;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	
+/*					My opacity adjustement*/
+/*					opacity:0.4;
+					filter:alpha(opacity=40);
+*/	
 }
 
 .panel-body {
@@ -5406,6 +5413,7 @@ a.list-group-item:focus {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+	
 }
 
 .panel-title {
