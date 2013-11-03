@@ -46,8 +46,19 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
+
+
+
 body {
   margin: 0;
+	
+/*	added for background image*/
+/*	background: url('/assets/phoenix-bg.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+*/	
 }
 
 a:focus {
@@ -3778,6 +3789,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+	
 }
 
 .nav:before,
@@ -5065,6 +5077,18 @@ a.thumbnail:focus {
 
 .alert-warning .alert-link {
   color: #a47e3c;
+}
+
+.alert-danger,
+.alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.alert-danger h4,
+.alert-error h4 {
+  color: #b94a48;
 }
 
 .alert-danger {
