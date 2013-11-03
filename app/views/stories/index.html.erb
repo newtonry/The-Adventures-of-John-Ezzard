@@ -1,8 +1,15 @@
 <h1>Stories</h1>
 <% @stories.each do |story| %>
-<div class='container storyContainer'>
-	<h3><%= story.title %></h3>
-	<%= simple_format(story.body)  %>
+	
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= story.title %></h3>
+  </div>
+  <div class="panel-body">
+    <%= simple_format(story.body)  %>
+  </div>	
 </div>
-<br>
+	
+	
+	<br>
 <% end %>
