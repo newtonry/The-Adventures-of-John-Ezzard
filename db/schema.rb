@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131102201547) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "stories", force: true do |t|
     t.string   "author_ip"
     t.string   "title",      null: false
@@ -21,6 +24,6 @@ ActiveRecord::Schema.define(version: 20131102201547) do
     t.datetime "updated_at"
   end
 
-  add_index "stories", ["title"], name: "index_stories_on_title"
+  add_index "stories", ["title"], name: "index_stories_on_title", using: :btree
 
 end
