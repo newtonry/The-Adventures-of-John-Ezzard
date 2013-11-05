@@ -17,6 +17,7 @@
 					<li><%= error %></li>
 				<% end %>
 			</div>
+			<% flash[:errors] = nil %>
 		<% end %>
 		
 		<%= yield %>

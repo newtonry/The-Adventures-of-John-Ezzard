@@ -5,12 +5,12 @@
 	
 	<div class="form-group">
 		<label for="story_title">Title:</label>
-		<input type="text" class="form-control" name="story[title]" id="story_title" value ="<%= @story.title%>">
+		<input type="text" class="form-control" name="story[title]" id="story_title" value ="<%= @story.title %>">
 	</div>
 
 	<div class="form-group">
 		<label for="story_body">Body:</label>
-		<textarea class="form-control" rows="10" name="story[body]" id="story_body" value ="<%= @story.body%>"></textarea>
+		<textarea class="form-control" rows="10" name="story[body]" id="story_body"><%= @story.body %></textarea>
 	</div>
 
 	<p><input type="submit" class="btn btn-default" value="Add Story"></p>
