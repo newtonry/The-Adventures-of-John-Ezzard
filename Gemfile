@@ -16,6 +16,9 @@ end
 
 gem 'rails_12factor', group: :production
 
+#new relic
+gem 'newrelic_rpm'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

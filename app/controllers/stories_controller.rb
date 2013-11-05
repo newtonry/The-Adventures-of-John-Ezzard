@@ -5,6 +5,7 @@ class StoriesController < ApplicationController
   end
   
   def create
+    params[:story][:author_ip] = request.env['REMOTE_ADDR'];
     @story = Story.new(params[:story])
     
     if @story.save
